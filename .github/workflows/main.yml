@@ -20,6 +20,7 @@ jobs:
 
       - name: Run stock check
         env:
-          PUSHOVER_TOKEN: ${{ secrets.PUSHOVER_TOKEN }}
-          PUSHOVER_USER: ${{ secrets.PUSHOVER_USER }}
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          STOCK_NOTIFY_EMAIL_PASSWORD: ${{ secrets.STOCK_NOTIFY_EMAIL_PASSWORD }}
+          RECIPIENT: ${{ secrets.RECIPIENT }}
         run: python main.py
