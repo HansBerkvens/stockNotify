@@ -18,9 +18,12 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
+      - name: Show what's actually running
+        run: cat main.py
+
       - name: Run stock check
         env:
           GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
           STOCK_NOTIFY_EMAIL_PASSWORD: ${{ secrets.STOCK_NOTIFY_EMAIL_PASSWORD }}
           RECIPIENT: ${{ secrets.RECIPIENT }}
-        run: python main.py
+        run: python -u main.py
