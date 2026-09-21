@@ -7,7 +7,6 @@ recipient = os.getenv('RECIPIENT')
 
 def send_notification(subject: str, body: str):
     sender = os.environ["GMAIL_ADDRESS"]
-    sender = 'hansberkvens96@gmail.com'
     password = os.environ["STOCK_NOTIFY_EMAIL_PASSWORD"]
     recipient = os.environ.get("RECIPIENT")  # send to yourself, or set a separate recipient
 
