@@ -1,6 +1,10 @@
 import smtplib
 from email.mime.text import MIMEText
 import os
+import logging
+logging.basicConfig(level=logging.INFO, format="%(name)s:%(levelname)s:%(asctime)s\t\t%(message)s", datefmt="%H:%M:%S", force=True)
+
+logging.info('At least the logger works (mail)')
 
 
 def send_notification(subject: str, body: str):
@@ -14,6 +18,7 @@ def send_notification(subject: str, body: str):
     msg["To"] = recipient
 
     with smtplib.SMTP_SSL("smtp.gmail.com", 465) as server:
+        logging.info(f'Sending mail {subject = }:: {body}')
         server.login(sender, password)
         server.send_message(msg)
 

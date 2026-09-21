@@ -2,6 +2,10 @@ import yfinance as yf
 import pandas as pd
 from stock import STOCKS, Stock
 from mail import send_notification
+import logging
+logging.basicConfig(level=logging.INFO, format="%(name)s:%(levelname)s:%(asctime)s\t\t%(message)s", datefmt="%H:%M:%S", force=True)
+
+logging.info('At least the logger works')
 
 
 send_notification('Stock Notify', 'Starting run')
@@ -19,6 +23,7 @@ for s in STOCKS:
         pass
 
 if sentences:
+    logging.info(f'Trying to send {len(sentences)} sentences.')
     body = '\n'.join(sentences)
     print(body)
     # send_notification('Stock Notify Action', body)
