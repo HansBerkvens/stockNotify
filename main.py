@@ -10,10 +10,12 @@ if __name__ == '__main__':
     for s in STOCKS:
         try:
             price = yf.Ticker(s.ticker).history(period=f'1d', auto_adjust=False)['Close'].item()
-            if price <= s.price_min:
+            if s.price_min is not None and price <= s.price_min:
                 sentences.append(f'Ticker {s.ticker} ({s.alias}) fell below {s.price_min}.')
-            elif s.price_max <= price:
+            elif s.price_max is not None and s.price_max <= price:
                 sentences.append(f'Ticker {s.ticker} ({s.alias}) rose above {s.price_min}.')
+            else:
+                sentences.append(f'Ticker {s.ticker} is still between {s.price_min} and {s.price_max}')
         except Exception:
             pass
 

@@ -2,13 +2,11 @@ import smtplib
 from email.mime.text import MIMEText
 import os
 
-pw = os.getenv('STOCK_NOTIFY_EMAIL_PASSWORD')
-recipient = os.getenv('RECIPIENT')
 
 def send_notification(subject: str, body: str):
     sender = os.environ["GMAIL_ADDRESS"]
     password = os.environ["STOCK_NOTIFY_EMAIL_PASSWORD"]
-    recipient = os.environ.get("RECIPIENT")  # send to yourself, or set a separate recipient
+    recipient = os.environ.get("RECIPIENT")
 
     msg = MIMEText(body)
     msg["Subject"] = subject
