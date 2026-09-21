@@ -2,7 +2,8 @@ import smtplib
 from email.mime.text import MIMEText
 import os
 import logging
-logging.basicConfig(level=logging.INFO, format="%(name)s:%(levelname)s:%(asctime)s\t\t%(message)s", datefmt="%H:%M:%S", force=True)
+import sys
+logging.basicConfig(level=logging.INFO, format="%(name)s:%(levelname)s:%(asctime)s\t\t%(message)s", datefmt="%H:%M:%S", force=True, stream=sys.stdout)
 
 logging.info('At least the logger works (mail)')
 

@@ -3,7 +3,8 @@ import pandas as pd
 from stock import STOCKS, Stock
 from mail import send_notification
 import logging
-logging.basicConfig(level=logging.INFO, format="%(name)s:%(levelname)s:%(asctime)s\t\t%(message)s", datefmt="%H:%M:%S", force=True)
+import sys
+logging.basicConfig(level=logging.INFO, format="%(name)s:%(levelname)s:%(asctime)s\t\t%(message)s", datefmt="%H:%M:%S", force=True, stream=sys.stdout)
 
 logging.info('At least the logger works')
 
