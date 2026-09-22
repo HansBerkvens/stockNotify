@@ -6,7 +6,6 @@ import logging
 logging.basicConfig(level=logging.INFO, format="%(name)s:%(levelname)s:%(asctime)s\t\t%(message)s", datefmt="%H:%M:%S", force=True)
 
 
-send_notification('Stock Notify', 'Starting run')
 sentences = []
 for s in STOCKS:
     try:
@@ -16,8 +15,8 @@ for s in STOCKS:
             sentences.append(f'Ticker {s.ticker} ({s.alias}) fell below {s.price_min}.')
         elif s.price_max is not None and s.price_max <= price:
             sentences.append(f'Ticker {s.ticker} ({s.alias}) rose above {s.price_min}.')
-        else:
-            sentences.append(f'Ticker {s.ticker} is at {price:.2f} which is between {s.price_min} and {s.price_max}')
+        # else:
+        #     sentences.append(f'Ticker {s.ticker} is at {price:.2f} which is between {s.price_min} and {s.price_max}')
     except Exception as e:
         logging.info(str(e).split('\n'))
         pass
