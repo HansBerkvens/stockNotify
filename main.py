@@ -14,7 +14,7 @@ for s in STOCKS:
         if s.price_min is not None and price <= s.price_min:
             sentences.append(f'Ticker {s.ticker} ({s.alias}) fell below {s.price_min}.')
         elif s.price_max is not None and s.price_max <= price:
-            sentences.append(f'Ticker {s.ticker} ({s.alias}) rose above {s.price_min}.')
+            sentences.append(f'Ticker {s.ticker} ({s.alias}) rose above {s.price_max}.')
         # else:
         #     sentences.append(f'Ticker {s.ticker} is at {price:.2f} which is between {s.price_min} and {s.price_max}')
     except Exception as e:
