@@ -9,7 +9,7 @@ class Stock:
     explanation: str = ''
 
 STOCKS = [
-    Stock('AGNC', 'AGNC', 9.8, None, 'price jumpy between $9.00 and $10.50 in 3 year window.\nRevenue & Profit on a steady climb. PE ratio of 5 is very low.\n14% div - monthly\nhttps://divvydiary.com/en/agnc-investment-stock-US00123Q1040'),
+    Stock('AGNC', 'AGNC', 8.8, None, 'price jumpy between $9.00 and $10.50 in 3 year window.\nRevenue & Profit on a steady climb. PE ratio of 5 is very low.\n14% div - monthly\nhttps://divvydiary.com/en/agnc-investment-stock-US00123Q1040'),
     Stock('AVGO', 'Broadcom', 300, None),
     Stock('CRDO', 'Credo', 150, None),
     Stock('EME', 'Emcor', 600, 950, 'Share price growing nice and steadily. Revenue growing nice and steadily, profit margin is on the low side. ROIC of 36% is amazing. Operating CF outpacing CapEx.'),
