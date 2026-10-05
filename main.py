@@ -32,5 +32,5 @@ for s in STOCKS:
 
 if sentences:
     body = '\n'.join(sentences)
-    send_notification(f'Stock Notify Action ({len(sentences)}', body)
+    send_notification(f'Stock Notify Action ({len(sentences)})', body)
 
