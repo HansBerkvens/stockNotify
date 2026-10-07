@@ -18,7 +18,7 @@ STOCKS = [
     Stock('SKHY', '', 175, None, 'Revenue growing from 30 (2023) to 66 to 97 to (ttm) 189 trillion, explosive growth. Revenue growing with it with profit margins 30% (2024), 45%, 85% (ttm). PE ratio of 9.05 is low. Located in Asia for non-western coverage.'),
     Stock('PUIG.MC', 'PUIG Brands', 16, None),
     Stock('META', 'Meta', 580, 740),
-    Stock('SY7D.DE', '', 14.6, None, 'Preferably trade on Xetra, not on tradegate. Global X 12% Europe - monthly payout\nhttps://divvydiary.com/en/global-x-euro-stoxx-50-covered-call-ucits-dis-etf-IE000SAXJ1M1'),
+    Stock('SY7D.DE', '', 14.4, None, 'Preferably trade on Xetra, not on tradegate. Global X 12% Europe - monthly payout\nhttps://divvydiary.com/en/global-x-euro-stoxx-50-covered-call-ucits-dis-etf-IE000SAXJ1M1'),
     Stock('GOOG', 'Google', 310, None, 'Google will always bounce back from a dip.'),
     Stock('AMZN', 'Amazon', 220, None),
     Stock('ASML.AS', 'ASML', 1400, None),
