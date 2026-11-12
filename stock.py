@@ -56,7 +56,7 @@ STOCKS = [
     Stock('EUNL.DE', 'World ETF', 125, None),
     Stock('CSPX.AS', 'S&P500 ETF', 710, None),
     Stock('EXSA.DE', 'Europe 600 ETF', 60, None),
-    Stock('MCD', 'BBBB', 255, 300, ''),
+    Stock('MCD', 'McDonalds', 255, 300, ''),
     Stock('META', 'Meta', 580, 730),
     Stock('NVDA', 'Nvidia', 125, 250, ''),
     Stock('G24.DE', 'Scout24', 80, 105, ''),
