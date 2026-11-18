@@ -48,7 +48,7 @@ STOCKS = [
     Stock('GOOG', 'Google', 270, None, 'Google will always bounce back from a dip.'),
     Stock('AMZN', 'Amazon', 225, 320, ''),
     Stock('AAPL', 'Apple', 300, 400, ''),
-    Stock('ASML.AS', 'ASML', 1400, None),
+    Stock('ASML.AS', 'ASML', 1200, None),
     Stock('KO', 'Coca-Cola', 80, 110, ''),
     Stock('DLR', 'Digital Realty Trust', 175, 200, ''),
     Stock('IAEA.AS', 'AEX ETF', 10.65, None, ''),
